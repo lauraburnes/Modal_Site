@@ -44,19 +44,6 @@ div{
   float: left;
 }
 
-/*search bar*/
-input[type=text] {
-  width: 130px;
-  padding: 14px 16px;
-  background-color: #f2f2f2;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-
-input[type=text]:focus {
-  width: 50%;
-  background-color: #ddd;
-}
 
 /* Create three equal columns that floats next to each other */
 .column {
@@ -153,13 +140,10 @@ h3 {
   overflow: hidden;
 }
 
-#slider{
-
-}
 
 #slider figure{
   position: relative;
-  max-width: 500%;
+  width: 200%;
   margin: auto;
   left: 0;
   animation: 20s slider infinite;
@@ -179,12 +163,8 @@ h3 {
 
 @keyframes slider {
   0% {left: 0;}
-  20% {left: 0;}
   25% {left: -100%;}
-  45% {left: -100%;}
   50% {left: -200%;}
-  70% {left: -200%;}
   75% {left: -300%;}
-  95% {left: -300%;}
   100% {left: -400%;}
 }
