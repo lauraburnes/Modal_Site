@@ -14,7 +14,17 @@ header {
   padding: 20px;
   text-align: center;
 }
+p {
+  text-align:left;
+}
 
+h1 {
+  text-align: center;
+}
+h2{
+  text-align: left;
+}
+h3{text-align: left;}
 
 /* Style the top navigation bar */
 .topnav {
@@ -136,35 +146,30 @@ h3 {
 
 /*slideshow*/
 
-#slider{
+#slideshow {
   overflow: hidden;
+  height: 530px;
+  width: 400px;
+  margin: 0 auto;
 }
 
+.slide-wrapper {
+  width: 500%;
+  animation: slide 30s ease infinite;
+}
 
-#slider figure{
-  position: relative;
-  width: 200%;
-  margin: auto;
-  left: 0;
-  animation: 20s slider infinite;
-  }
-
-#slider img{
-  width: 20%;
+.slide {
   float: left;
+  height: 530px;
+  width: 400px;
 }
 
-
-#slider img{
-  height: auto;
-   width: 20%;
-}
-
-
-@keyframes slider {
-  0% {left: 0;}
-  25% {left: -100%;}
-  50% {left: -200%;}
-  75% {left: -300%;}
-  100% {left: -400%;}
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -400px;}
+  50% {margin-left: -400px;}
+  60% {margin-left: -800px;}
+  70% {margin-left: -800px;}
+  80% {margin-left: -1600px;}
+  90% {margin-left: -1600px;}
 }
